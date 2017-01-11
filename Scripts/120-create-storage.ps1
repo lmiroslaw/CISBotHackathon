@@ -1,3 +1,4 @@
+#I think this variable has already been defined in Config . No need to do it again here. The same applies to othe scripts.
 $ErrorActionPreference = "Stop"
 $scriptDir=($PSScriptRoot, '.' -ne "")[0]
 . "$scriptDir\Include\common.ps1" 
