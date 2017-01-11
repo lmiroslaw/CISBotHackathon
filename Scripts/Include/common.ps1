@@ -20,6 +20,7 @@ Write-Host "`nConnecting to your Azure subscription ..." -ForegroundColor Green
 try{Get-AzureRmContext}
 catch{Login-AzureRmAccount}
 
+# These messages are displayed for every script. I would limit it only to 110.  
 Write-Host "Creating resources in subscription: " (Get-AzureRmContext).Subscription.SubscriptionName -ForegroundColor Green
 Write-Host "If you have multiple subscriptions and do not want to use your default one, run e.g." -ForegroundColor Green
 Write-Host 'Set-AzureRmContext -SubscriptionName "Azure Pass"' -ForegroundColor Green
